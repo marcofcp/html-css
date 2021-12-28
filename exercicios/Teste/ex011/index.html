@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <p>Abaixo vamos apresentar imagens em vários tamanhos e que se adaptam em dispositivos móveis, de tamanho de ecrã menor</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/martim-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/martim-m.jpg" type="image/jpg">
+        <img src="imagens/martim-g.jpg" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
