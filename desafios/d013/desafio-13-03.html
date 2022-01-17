@@ -19,31 +19,27 @@
             border: 1px solid black;
         }
 
-        th {
+        .bgray {
             background-color: gray;
             color: lightgray;
+            font-weight: bold;
         }
 
-        tr.bwhite {
-            background-color: white;
-        }
-
-        tr.bgray {
-            background-color: gray;
-            color: lightgray;
-        }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="carea">
+        </colgroup>
         <thead>
-            <tr>
+            <tr class="bgray">
                 <th scope="col" rowspan="2">Área</th>
                 <th scope="col" rowspan="2">Disciplinas</th>
                 <th scope="colgroup" colspan="2">Notas</th>
                 <th rowspan="2">Média</th>
             </tr>
-            <tr>
+            <tr class="bgray">
                 <th scope="col">Nota 1</th>
                 <th scope="col">Nota 2</th>
             </tr>
@@ -51,7 +47,7 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="rowgroup" rowspan="4" class="backwhite">Exatas</th>
+                <th scope="rowgroup" rowspan="4" class="bgray">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -77,10 +73,10 @@
             </tr>
             <tr class="bgray">
                 <th scope="row" colspan="4">Média de Exatas</th>
-                <td class="backgray">0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <th scope="rowgroup" rowspan="2" class="backwhite">Humanas</th>
+                <th scope="rowgroup" rowspan="2" class="bgray">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -92,9 +88,9 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="bgray">
                 <th scope="row" colspan="4">Média de humanas</th>
-                <td class="backgray">0.0</td>
+                <td>0.0</td>
             </tr>
         </tbody>
     </table>
